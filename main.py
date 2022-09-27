@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def index():
     rand = random.randint(1, 1001)
     return f"<h1>{rand}</h1>"
