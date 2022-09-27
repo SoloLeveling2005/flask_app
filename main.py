@@ -6,12 +6,12 @@ app = Flask(__name__)
 
 
 @app.route('/get/', methods=['GET'])
-def index():
+def get_index():
     rand = random.randint(1, 1001)
     return f"<h1>{rand}</h1>"
 
 @app.route('/post/', methods=['POST'])
-def index():
+def post_index():
     rand = random.randint(1, 1001)
     return f"<h1>{rand}</h1>"
 # Запуск:
