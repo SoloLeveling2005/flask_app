@@ -5,12 +5,12 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 
-@app.route('/get/', methods=['GET'])
+@app.route('/', methods=['GET'])
 def get_index():
     rand = random.randint(1, 1001)
     return f"<h1>{rand}</h1>"
 
-@app.route('/post/', methods=['POST'])
+@app.route('/', methods=['POST'])
 def post_index():
     rand = random.randint(1, 1001)
     return f"<h1>{rand}</h1>"
