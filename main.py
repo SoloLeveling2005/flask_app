@@ -10,10 +10,7 @@ def get_index():
     rand = random.randint(1, 1001)
     return f"<h1>{rand}</h1>"
 
-@app.route('/', methods=['POST'])
-def post_index():
-    rand = random.randint(1, 1001)
-    return f"<h1>{rand}</h1>"
+
 # Запуск:
 # set FLASK_APP=main
 # flask run
